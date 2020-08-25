@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MenuEx = () => {
+const Menu = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -68,4 +68,4 @@ const MenuEx = () => {
   );
 };
 
-export default MenuEx;
+export default Menu;

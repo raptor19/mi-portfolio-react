@@ -9,8 +9,7 @@ const Contact = () => {
         <div className="heading-wrapper">
           <div className="heading">
             <p className="title">
-              Want to <br />
-              contact me?
+              Contactame!
             </p>
             <p className="separator" />
             <p className="subtitle">

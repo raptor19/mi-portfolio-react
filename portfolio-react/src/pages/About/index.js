@@ -1,9 +1,9 @@
 import React from "react";
-import "../About/About.css"
+import { Section } from './AboutStyles';
 
 const About = () => {
   return (
-    <section id="about">
+    <Section>
       <div className="wrapper">
         <article>
           <div className="title">
@@ -59,7 +59,7 @@ const About = () => {
           </div>
         </article>
       </div>
-    </section>
+    </Section>
   );
 };
 

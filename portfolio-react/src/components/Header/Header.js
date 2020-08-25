@@ -1,25 +1,30 @@
 import React from "react";
-import "../Header/Header.css"
+import { Titulo, Subtitulo, WelcomeSection } from "./HeaderStyles";
+//import CssBaseline from "@material-ui/core/CssBaseline";
+import Button from "@material-ui/core/Button";
+//import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
 
-
-const Header = React.forwardRef((props,ref) => {
+const Header = React.forwardRef((props, ref) => {
   return (
-    <header id="welcome-section" ref={ref}>
-      <div className="container">
-        <h1>
-          <span className="line">Almiron Cristian</span>
-          <span className="line">
-            <span>Desarrollador web</span>
-          </span>
-        </h1>
-        <div className="buttons">
-          <a href="#projects">mi portfolio</a>
-          <a href="#about" className="cta">
-            sobre mi
-          </a>
-        </div>
-      </div>
-    </header>
+    <WelcomeSection ref={ref}>
+      <Grid direction="column" justify="center" alignItems="center">
+        <Titulo>Almiron Cristian</Titulo>
+        <Subtitulo>Desarrollador web</Subtitulo>
+        <Button className="primary" variant="contained" href="#projects">
+          mi portfolio
+        </Button>
+
+        <Button
+          className="secondary"
+          variant="contained"
+          color="primary"
+          href="#about"
+        >
+          sobre mi
+        </Button>
+      </Grid>
+    </WelcomeSection>
   );
 });
 

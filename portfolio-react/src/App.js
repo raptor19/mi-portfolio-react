@@ -5,7 +5,7 @@ import About from "./pages/About/index";
 import Contact from "./pages/Contact/index";
 import Projects from "./pages/Projects/index";
 import "./App.css";
-import MenuEx from "./components/Menu/MenuEx";
+import MenuEx from "./components/Navbar/MenuEx";
 
 function App() {
   const header = React.createRef();
